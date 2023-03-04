@@ -1,22 +1,10 @@
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
 
 const Home = () => {
   return (
     <>
-      <nav>
-        <ul>
-          <li>
-            <Link href="/about">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact">  
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <Navbar />
       <h1>Hello World</h1>
     </>
   )
