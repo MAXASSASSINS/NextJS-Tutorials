@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 const ErrorPage = () => {
     const router = useRouter()
     useEffect(() => {
@@ -12,6 +13,9 @@ const ErrorPage = () => {
 
     return (
         <>
+            <Head>
+                <title>404 - Page Not Found</title>
+            </Head>
             <h1>404 - Page Not Found</h1>
         </>
     )
